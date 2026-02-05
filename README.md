@@ -40,7 +40,8 @@
 
 ## 2. 아키텍처 구성도
 
-![[제목 없는 다이어그램.drawio (7) 1.png]]
+<img src="DR_PoC/dr-arc.png" width="700" alt="아키텍처 구성도">
+
 
 ### 2.1 아키텍처 구성 요소별 역할 분석
 
@@ -100,11 +101,11 @@ $ sudo ipsec statusall
 
 **정상 연결 시 확인되는 상태:**
 
-• **IKE_SA:** ESTABLISHED
-• **CHILD_SA:** INSTALLED
-• **통신 대역:** 10.20.0.0/16 === 192.168.64.0/24
+- **IKE_SA:** ESTABLISHED
+- **CHILD_SA:** INSTALLED
+- **통신 대역:** 10.20.0.0/16 === 192.168.64.0/24
 
-![[스크린샷 2026-02-05 15.46.49.png]]
+<img src="DR_PoC/conn.png" width="700" alt="연결 상태">
 
 ---
 
@@ -122,11 +123,12 @@ $ sudo ipsec statusall
 ```sql
 - 복제 상태 확인
 SHOW REPLICA STATUS\G
-- 정상 상태 기준
-- Replica_IO_Running: Yes
-- Replica_SQL_Running: Yes
-- Seconds_Behind_Source: 정상 범위 확인
 ```
+**정상 연결 시 확인되는 상태:**
+
+- **Replica_IO_Running: Yes**
+- **Replica_SQL_Running: Yes**
+- **Seconds_Behind_Source: 정상 범위 확인**
 
 **테스트 데이터 생성:**
 ```sql
@@ -200,7 +202,8 @@ SELECT * FROM testdb.ping;
 - **모든 데이터가 정상적으로 Replica에 반영됨을 확인하였습니다.**
 
 
-![[스크린샷 2026-02-05 15.40.45.png]]
+<img src="DR_PoC/test-ping.png" width="700" alt="db 상태">
+
 ---
 
 ## 7. 트러블슈팅 기록

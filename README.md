@@ -30,7 +30,7 @@
 
 ## 1. 개요
 
-본 문서는 AWS 환경과 로컬 On-Prem 환경을 **Site-to-Site VPN(StrongSwan, IPsec / IKEv2)**으로 연결하고, AWS에 위치한 **MySQL Primary(Source)**와 On-Prem 환경의 **MySQL Replica** 간 **비동기 Replication**을 구성하여 네트워크 장애 발생 시 **DR(Disaster Recovery) 관점에서 데이터 복구 가능 여부를 검증**한 PoC 프로젝트입니다.
+본 문서는 AWS 환경과 로컬 On-Prem 환경을 <strong>Site-to-Site VPN(StrongSwan, IPsec / IKEv2)</strong>으로 연결하고, AWS에 위치한 <strong>MySQL Primary(Source)</strong>와 On-Prem 환경의 <strong>MySQL Replica</strong> 간 <strong>비동기 Replication</strong>을 구성하여 네트워크 장애 발생 시 <strong>DR(Disaster Recovery) 관점에서 데이터 복구 가능 여부를 검증</strong>한 PoC 프로젝트입니다.
 
 **주요 목적:**
 

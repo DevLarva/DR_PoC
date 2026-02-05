@@ -180,16 +180,16 @@ INSERT INTO ping(msg) VALUES('replication_test_while_vpn_down');
 $ sudo ipsec down onprem-aws
 $ sudo ipsec up onprem-aws
 ```
-# 2. AWS VPN 재시작
+### 6.5 AWS VPN 재시작
 ```bash
 $ sudo ipsec down onprem-aws
 $ sudo ipsec up onprem-aws
 ```
-# 3. 복구 확인
+### 6.6 복구 확인
 ```bash
 $ sudo ipsec statusall
 ```
-### 6.5 복구 후 데이터 동기화 확인
+### 6.7 복구 후 데이터 동기화 확인
 
 ```sql
 SELECT * FROM testdb.ping;
